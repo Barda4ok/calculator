@@ -1,11 +1,3 @@
-function calculatepercent()
-    {
-    var firstnum = 8;
-    var percentnum = 50;
-    var percentresult = 8 * 100 / 50;
-    console.log(percentresult);
-    }
-
 calculator.one.addEventListener('click', function() {
     calculator.result.value += '1';
 }, false)
@@ -74,7 +66,12 @@ calculator.equal.addEventListener('click', function() {
     calculator.result.value = eval(calculator.result.value);
 }, false)
 
-
 calculator.percent.addEventListener('click', function() {
-    calculator.result.value += calculatepercent;
+    calculator.result.value += perc;
  }, false)
+ function perc(){
+        var x = 500;
+        var y = 25;
+        var res1 = x * (y/100);
+        print(res1)
+    }
